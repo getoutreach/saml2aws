@@ -9,7 +9,7 @@ import (
 	survey_terminal "github.com/AlecAivazis/survey/v2/terminal"
 )
 
-// outputWriter is where for all prompts will be printed. Defaults to os.Stder.
+// outputWriter is where for all prompts will be printed. Defaults to os.Stderr.
 var outputWriter survey_terminal.FileWriter = os.Stderr
 
 // CliPrompter used to prompt for cli input
