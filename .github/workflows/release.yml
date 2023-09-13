@@ -55,6 +55,7 @@ jobs:
         version: latest
         args: release --clean --config .goreleaser.${{ matrix.os }}.yml
       env:
+        CGO_ENABLED: 1
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         IMAGE_NAME: ${{ env.REPOSITORY_NAME_LOWERCASE }}
 
