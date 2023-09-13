@@ -102,6 +102,8 @@ jobs:
         with:
           version: latest
           args: build --snapshot --clean --config .goreleaser.${{ matrix.os }}.yml
+        env:
+          CGO_ENABLED: 1
 
       - name: Upload
         uses: actions/upload-artifact@v3
